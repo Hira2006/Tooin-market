@@ -12,7 +12,7 @@ export interface IProduct {
     image: string | StaticImageData;
     category: string;
     title: string;
-    price:string ;
+    price:number;
     sale: boolean | undefined;
     range: any;
     sortby: string;
@@ -82,7 +82,7 @@ const ProductCard = ({ id, image, category, sale, title, price, range, sortby, r
             title,
             category,
             sale,
-            price: parseFloat(price),
+            price,
             quantity: 1,
             range,
             sortby,

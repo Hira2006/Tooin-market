@@ -21,6 +21,9 @@ export default function Page({ params }: { params: { slug: string } }) {
               image={product.image as StaticImageData}
               category={product.category}
               id={product.id}
+              rating={product.rating}
+              range={product.range}
+              sortby={product.sortby}
               sale={product.sale}
             />
           ))
